@@ -1,0 +1,15 @@
+<div id ="random-section">
+    {{!-- <img src="{{beerItems.image_url}}" alt="random-beer">
+    <h2>{{beerItems.name}}</h2>
+    <p>{{beerItems.tagline}}</p>
+    <p>{{beerItems.description}}</p> --}}
+
+    {{>beerpartial beerItems}}
+    <p id = "pairing">Food Pairing</p>
+    <ul>
+        {{#each beerItems.food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p><span>Brewers Tips: </span>{{beerItems.brewers_tips}}</p>
+</div>

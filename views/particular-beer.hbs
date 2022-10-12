@@ -1,0 +1,10 @@
+<div id = "particular">
+    {{>beerpartial propertiesList}}
+
+    <ul>
+        {{#each propertiesList.food_pairing}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    <p>{{propertiesList.brewers_tips}}</p>
+</div>
